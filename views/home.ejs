@@ -1,0 +1,113 @@
+<%- layout("/layouts/boilerplate") %>
+
+
+    <div class="bg-light">
+
+        <div class="row behind m-0">
+            <div class="col p-0">
+                <div class="text-center rounded tinted-image mx-auto">
+                    <span class="lead tool text-uppercase">Book for less today! Try ExpressDelivery</span>
+                    <hr class="mx-auto w-25">
+                    <h3 class="display-5 pt-2 pb-4">Need to Travel? Looking for something to eat? <br></h3>
+                    <a href="#info" class="btn btn-outline-light">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row behind m-0">
+            <div class="col">
+                <div class="text-center mx-auto">
+                    <h1 id="info" class="display-5">How it works</h1>
+                    <hr id="hr-1" class="w-25 mx-auto bg-secondary">
+                </div>
+                <div class="icons text-center mx-auto">
+
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5 bg-light">
+            <div class="card-group">
+                <div class="card border-0 bg-transparent">
+                    <img src="https://img.icons8.com/ultraviolet/60/000000/untested.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Make your choice</h5>
+                        <p class="card-text">Whether you need a ride somewhere or some food picked up, you will first
+                            pick an option through our world class trip plan technology</p>
+                    </div>
+                </div>
+                <div class="card border-0 bg-transparent">
+                    <img src="https://img.icons8.com/offices/50/000000/worldwide-location.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Select and Book</h5>
+                        <p class="card-text">Enter your location details: pick up and drop off locations, restaurant (if
+                            you are ordering) and add the food to the shopping cart</p>
+                    </div>
+                </div>
+                <div class="card border-0 bg-transparent">
+                    <img src="https://img.icons8.com/cotton/60/000000/car--v2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Travel or Dine</h5>
+                        <p class="card-text">You will see details regarding the trip on the confirmation page after
+                            completing your request. Now just sit back and relax for the updates.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row behind text-center m-0">
+            <div class="col mb-5 my-5">
+                <div class="card w-50 mx-auto">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs pull-right" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="ride-tab" data-toggle="tab" href="#ride" role="tab"
+                                    aria-controls="ride" aria-selected="true">Ride</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="eat-tab" data-toggle="tab" href="#eat" role="tab"
+                                    aria-controls="eat" aria-selected="false">Eat</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="ride" role="tabpanel" aria-labelledby="ride-tab">
+                                <div class="row">
+                                    <div class="col m-0">
+                                        <h2 class="display-5 mb-4" style="font-size: 3.5em">Request a ride now</h2>
+                                        <div class="mt-4 request">
+                                            <p>Find a ride within minutes! (max dist. 50kms)</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row mt-3 request">
+                                    <div class="container">
+                                        <a href="/" ng-controller="rideCtrl" class="btn btn-dark"
+                                            style="background-color: black">Request now</a>
+                                        <a href="/" ng-controller="rideCtrl" class="ml-2 btn btn-light"
+                                            style="background-color: rgba(232, 232, 232, 1);">Request for later</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="eat" role="tabpanel" aria-labelledby="eat-tab">
+                                <h3 class="display-5 mb-3" style="font-size: 3.5em">Discover delicious eats</h3>
+                                <div class="mt-4 request">
+                                    <p class="">Order delivery from restaurants you love! <br></p>
+                                    <a href="/" ng-controller="deliveryCtrl" class="mt-3 btn btn-dark"
+                                        style="background-color: black">Order now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

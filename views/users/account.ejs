@@ -1,0 +1,65 @@
+<% layout("layouts/boilerplate") %>
+
+    <form class="mx-auto form-row g-0 border mt-5"
+        style="padding-top: 2em; padding-left: 5em; padding-bottom: 5em; padding-right: 5em;">
+        <h1 class="display-5 mb-5">Account Details</h1>
+
+        <div class="form-group col-sm-9 mb-2">
+            <h4 class="mb-3">Login information:</h2>
+                <label class="mb-1" for="userInput">User Name</label>
+                <input name="user" type="text" class="form-control" id="userInput">
+
+                <label for="passwordInput">Password</label>
+                <input name="password" type="password" class="form-control" id="passwordInput">
+        </div>
+        <div class="form-group col-sm-9 mt-4 mb-2">
+            <h4 class="mb-3">Personal information:</h2>
+                <div class="form-group">
+                    <label for="addressInput">Address</label>
+                    <input name="address" type="text" class="form-control" id="addressInput"
+                        placeholder="354 Dundas St">
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="cityInput">City</label>
+                        <input name="city" type="text" class="form-control" id="cityInput">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="provinceInput">Province</label>
+                        <select id="provinceInput" class="form-control">
+                            <option value="" disabled selected>Province</option>
+                            <option value="ontario">Ontario</option>
+                            <option value="manitoba">Manitoba</option>
+                            <option value="quebec">Quebec</option>
+                            <option value="newbrunswick">New Brunswick</option>
+                            <option value="alberta">Alberta</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="postalInput">Postal Code</label>
+                        <input name="postal" type="text" class="form-control" id="postalInput">
+                    </div>
+                </div>
+        </div>
+        <div class="form-group col-sm-9 mt-4 mb-2">
+            <h4 class="mb-3">Payment information:</h2>
+
+                <label for="paymentInput">Card Number</label>
+                <input name="payment" type="text" class="form-control" id="paymentInput">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nameInput">Name on Card</label>
+                        <input name="name" type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="expiryInput">Expiry Date (MM/YY)</label>
+                        <input name="expiry" type="text" class="form-control" id="expiryInput">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="ccvInput">CCV</label>
+                        <input name="ccv" type="text" class="form-control" id="ccvInput">
+                    </div>
+                </div>
+        </div>
+        <button class="btn btn-success" type="submit">Update</button>
+    </form>

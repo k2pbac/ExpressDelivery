@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light">
+    <span class="mx-auto mx-lg-4 navbar-brand"><img alt="logo"
+            src="https://img.icons8.com/metro/36/26e07f/lightning-bolt.png" />ExpressDelivery</span>
+    <div class="d-flex order-lg-1 ml-auto pr-2">
+
+        <ul class="navbar-nav flex-row mx-3">
+            <% if (typeof(user) !=="undefined" ) {%>
+                <li class="nav-item position-relative px-2 px-lg-0" style="display: inline-block; top:-10%">
+                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="nav-link">
+                        <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="23" height="24"
+                            fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
+                        </svg>
+                        <span id="cartCount" style="font-size: 12px; color:white; position: absolute; top: 60%;
+                    left: 49%; transform: translate( -50%, -50% );text-align: center;"
+                            class="cartCount badge bg-transparent">
+                            <% if(typeof(session.cart) !=="undefined" ) { %>
+                                <%= session.cart.totalQty %>
+                                    <% } else{ %>
+                                        <%= 0 %>
+                                            <% } %>
+                        </span>
+                    </a>
+                </li>
+
+                <div id="cartBlock">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header border-bottom border-2">
+                            <h5 class="" id="offcanvasRightLabel">Your Order
+                            </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body mx-auto">
+                            <%- include("./cart") %>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <li class="nav-link disabled text-white hideLink">
+                    <span class="nowrap"> Welcome, <%= user.username[0].toUpperCase() + user.username.slice(1) %>
+                    </span>
+                </li> -->
+                <li class="ml-2 ml-lg-0 nav-item">
+                    <a id="account" class="nav-link hideLink" href="/account">Account</a>
+                </li>
+                <li class="nav-item mx-1 mx-lg-0">
+                    <a id="logout" href="/logout" class="nav-link">Logout</a>
+                </li>
+                <% } else{%>
+                    <li class="nav-item mx-lg-0">
+                        <a id="login" class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a id="register" class="nav-link" href="/register">Register</a>
+                    </li>
+                    <% }%>
+        </ul>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="ml-2 ml-lg-0 nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="ml-2 ml-lg-0 nav-item">
+                <a class="nav-link" href="/about">About us</a>
+            </li>
+            <li class="ml-2 ml-lg-0 nav-item">
+                <a class="nav-link" href="/reviews">Reviews</a>
+            </li>
+            <li class="ml-2 ml-lg-0 nav-item">
+                <a class="nav-link" href="/contact">Contact us</a>
+            </li>
+            <li class="ml-2 ml-lg-0 nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="/ride">Ride to Destination</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="/delivery">Food Delivery</a>
+                    </li>
+                </ul>
+            </li>
+            <% if(typeof(user) !=="undefined" ){ %>
+                <li class="ml-2 ml-lg-0 nav-item">
+                    <a id="account" class="nav-link showLink" href="/account">Account</a>
+                </li>
+                <% } %>
+        </ul>
+
+
+    </div>
+</nav>

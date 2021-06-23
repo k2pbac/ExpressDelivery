@@ -1,0 +1,83 @@
+module.exports.firstName = [
+    'Jimmy',
+    'Jahmal',
+    'Lucy',
+    'Perry',
+    'Manny',
+    'Fredrick',
+    'Manuel',
+    'Ifaz',
+    'Jerry',
+    'Walid',
+    'Khalid',
+    'Anderson',
+    'Terry',
+    'Sarah',
+    'Emily',
+    'Samantha',
+    'Fatima',
+    'Khadijah'
+];
+
+module.exports.lastName = [
+    'Part',
+    'Idrees',
+    'Masterson',
+    'Jensen',
+    'Jawad',
+    'Sewers',
+    'Portson',
+    'Sealson',
+    'Carter',
+    'Farry',
+    'Opperson',
+    'Metro',
+    'Pouf',
+    'Loops',
+    'Deto',
+    'Niko',
+    'Kats',
+    'Seal'
+]
+
+module.exports.driverImages = [
+    'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1488161628813-04466f872be2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA2fHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE4fHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1485043433441-db091a258e5a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMwfHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1530785602389-07594beb8b73?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY3fHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1504199367641-aba8151af406?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc2fHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1514626585111-9aa86183ac98?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTgxfHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1523824921871-d6f1a15151f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg0fHxwZW9wbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1579798795533-caef937ece1f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1leGljYW4lMjBtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+]
+
+module.exports.cars = [
+    { name: 'Toyota Camry', image: 'https://images.pexels.com/photos/6894428/pexels-photo-6894428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+    { name: 'Mercedes GCL Coupe', image: 'https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+    { name: 'BMW X3', image: 'https://images.pexels.com/photos/365811/pexels-photo-365811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+    { name: 'Honda Civic', image: 'https://images.pexels.com/photos/6794815/pexels-photo-6794815.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
+    { name: 'Ford Ranger', image: 'https://images.unsplash.com/photo-1614484393797-257ee1d83a1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80' },
+    { name: 'Maybach S-Class', image: 'https://images.unsplash.com/photo-1574881925028-184834a98241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=337&q=80' },
+    { name: 'Maserati Levante', image: 'https://images.unsplash.com/photo-1589134723101-5abd32593adf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80' },
+    { name: 'BMW M3 Sedan', image: 'https://images.unsplash.com/photo-1504366130991-154787072d46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80' },
+    { name: 'Mazda CX-5', image: 'https://images.unsplash.com/photo-1594485983481-bd5274b490ec?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hemRhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+    { name: 'Mazda CX-30', image: 'https://images.unsplash.com/photo-1586464836139-86553c751f65?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG1hemRhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+    { name: 'Chrysler Grand Caravan', image: 'https://live.staticflickr.com/65535/50719518996_0d1ac1d352_b.jpg' },
+    { name: 'Chrysler 300', image: 'https://media.ed.edmunds-media.com/chrysler/300/2021/oem/2021_chrysler_300_sedan_s_fq_oem_3_1600.jpg' },
+    { name: 'GMC Yukon', image: 'https://media.ed.edmunds-media.com/gmc/yukon-xl/2021/oem/2021_gmc_yukon-xl_4dr-suv_denali_fq_oem_1_1600.jpg' },
+    { name: 'Hummer H3 Alpha', image: 'https://media.ed.edmunds-media.com/hummer/h3/2008/oem/2008_hummer_h3_4dr-suv_h3x_fq_oem_1_500.jpg' },
+    { name: 'Jeep Wrangler', image: 'https://media.ed.edmunds-media.com/jeep/wrangler/2021/oem/2021_jeep_wrangler_convertible-suv_unlimited-rubicon-392_fq_oem_2_815.jpg' },
+    { name: 'Jeep Cherokee', image: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/2019_Jeep_Cherokee_Latitude_front_5.27.18.jpg' },
+    { name: 'Corvette Stingray', image: 'https://www.carscoops.com/wp-content/uploads/2020/08/Chevrolet-Corvette-Stingray-6n-1024x555.jpg' },
+    { name: 'Shelby Mustang', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ4Itfvz3HuQ8Le5AxWYeoQylCWeXsd2P8NQ&usqp=CAU' }
+]

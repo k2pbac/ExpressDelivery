@@ -1,0 +1,116 @@
+
+  
+html, body { height: 100% }
+
+.nowrap {
+  white-space: nowrap ;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+}
+.nav-link{
+  color: black !important;
+}
+
+
+.editBtn:hover {
+  background-color: rgba(218, 223, 225, 0.7) !important;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover .card {
+  color:rgba(46,49,49, 0.9);
+  border: rgba(46,49,49, 0.9) solid 1px !important;
+}
+
+ a:hover svg{
+  transition-timing-function: ease-in;
+  -webkit-filter: invert(0.5) sepia(1) hue-rotate(200deg);
+  filter: invert(0.5) sepia(1) hue-rotate(200deg);
+}
+
+  /*Card CSS*/
+  
+  .card-img-top {
+    object-fit: scale-down;
+    height: 100px;
+  }
+  
+  .card {
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+  .serviceTitle {
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: */
+  }
+
+  .serviceTip {
+    font-size: 15px;
+  }
+
+  
+  /*Jumbotron CSS*/
+  
+  .tinted-image {
+    background: 
+    linear-gradient(
+      rgba(46,49,49, 0.5), 
+      rgba(46,49,49, 0.5)
+      ),
+    /* bottom, image */
+    url("https://i.imgur.com/AKh0pJR.jpg");
+    height: 520px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10em;
+    margin-bottom: 5em;
+  }
+  hr { 
+    background-color: white; height: 0.2px; border: 0; 
+  }
+  .tool {
+    font-size: 12px;
+  }
+  .jumboback {
+    background-color: #1d6b87;
+  }
+  
+
+  .behind {
+    background-color:rgba(107, 185, 240, 0.5);
+    margin-bottom: 2em;
+  }
+  .jumbotron-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em; 
+    color:#89d6f3;
+}
+  
+@media (max-width: 991.98px) {
+  .hideLink {
+      display: none;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .showLink {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .showLink {
+    display: inline-block;
+  }
+}

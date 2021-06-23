@@ -1,0 +1,113 @@
+<%- layout("/layouts/boilerplate") %>
+
+    <div class="row">
+        <div class="col-8 mx-auto">
+            <h1 class="display-3 text-center mb-5">
+                <%= store.storeName %>
+            </h1>
+            <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-2 g-3">
+                <% products.forEach( (product, index)=> { %>
+                    <div class="col-6">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalToggle<%= index %>">
+                            <div class="card border-0">
+                                <img src="<%= product.image %>" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <%= product.product %>
+                                    </h5>
+                                    <p class="card-text">Price: <%= product.price %>
+                                    </p>
+                                    <p class="card-text">
+                                        <%= product.description %>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalToggle<%= index %>" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel<%= index %>" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel<%= index %>">
+                                        <%= product.product %>
+                                    </h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img style="min-width: 100%; height: 300px;" class="card-img-top"
+                                        src="<%= product.image %>" alt="">
+                                    <p>
+                                        <%= product.description %>
+                                    </p>
+                                    <div class="quantity buttons_added">
+                                        <input type="button" value="-" class="minus quantityMinus"><input
+                                            id="quantity<%= index %>" type="number" step="1" min="1" max=""
+                                            name="quantity" value="1" title="Qty" class="input-text qty text" size="4"
+                                            pattern="" inputmode="" disabled><input type="button" value="+"
+                                            class="plus quantityPlus">
+                                        <p class="card-text mt-2 mr-4">Total Cost: <span id="cost<%= index %>">
+                                                <%= parseFloat(product.price) %>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button data-bs-target="#exampleModalToggle2<%= index %>" data-bs-toggle="modal"
+                                        type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Customize</button>
+                                    <form method="GET">
+                                        <input id="storeID<%= index %>" type="text" value="<%= store._id %>" hidden>
+                                        <input id="productID<%= index %>" type="text" value="<%= product._id %>" hidden>
+                                        <button id="<%= index %>" type="submit"
+                                            class="addToCart btn btn-outline-dark addCart">
+                                            Add to Cart </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2<%= index %>" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2<%= index %>" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2<%= index %>">
+                                        <%= product.product %>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="" style="max-height: 150px;" src="<%= product.image %>" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            <% if( product.customizations.length ) {%>
+                                                <% product.customizations.forEach( el=>{ %>
+                                                    <p>
+                                                        <label for="amount">Amount of <%= el %> to
+                                                                add:</label>
+                                                        <input class="form-control" id="amount" type="number"
+                                                            placeholder="Amount">
+                                                    </p>
+                                                    <% }); }%>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle<%= index %>"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Confirm additions</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }); %>
+            </div>
+        </div>
+    </div>

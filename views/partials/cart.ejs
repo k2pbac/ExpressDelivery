@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col">
+        <% if (typeof(cart) !=="undefined" ) { %>
+            <% var items=Object.values(Object.values(cart.items)); %>
+                <% items.forEach( (el, index)=> { %>
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 id="item<%=index%>" class="card-title cartItem">
+                                <%= Object.values(el)[0].product %>
+                            </h5>
+                            <img src="<%= Object.values(el)[0].image %>" class="card-img-top" alt="...">
+                            <div class="quantity buttons_added text-center">
+                                <input id="minus<%= Object.values(el)[0]._id %>" type="button" value="-"
+                                    class="removeCart minus"><input type="number" step="1" min="1" max=""
+                                    name="quantity" value="<%= Object.values(el)[1] %>" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="" disabled><input
+                                    id="<%= Object.values(el)[0]._id %>" type="button" value="+" class="plus add2Cart">
+                            </div>
+                            <p class=card-text>
+                                Cost: $<%= Object.values(el)[2] %>
+                            </p>
+                            <input id="productId<%= index %>" type="text" value="<%= Object.values(el)[0]._id %>"
+                                hidden>
+
+                        </div>
+                    </div>
+                    <% }); }%>
+    </div>
+</div>
+<div class="row">
+    <% if (typeof(cart) !=="undefined" ) { %>
+        <p>Total Cost: $<%= parseFloat((Object.values(cart)[2]).toFixed(2)) %>
+        </p>
+        <% } %>
+</div>
+<div class="row">
+    <div class="col">
+        <button class="btn btn-success">Checkout</button>
+    </div>
+</div>

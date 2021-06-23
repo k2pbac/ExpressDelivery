@@ -1,0 +1,31 @@
+<%- layout("/layouts/boilerplate") %>
+
+
+    <div class="bg-white">
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="container shadow w-50 bg-light mt-5 p-3 mb-5">
+                        <h1 class="text-center display-4 mb-3">Reviews</h1>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="adminOptions">Choose a service to leave a review</label>
+                                <select class="form-control mx-auto mb-3" id="reviewOpt" name="reviewOpt"
+                                    ng-model="selectedReview" ng-change="displayReviews()"
+                                    ng-options="review.name group by review.type disable when review.notAnOption for review in reviews track by review.name">
+                                </select>
+                            </div>
+
+                        </div>
+                        <div id="bottomReviews">
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
